@@ -1,0 +1,38 @@
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.canvas {
+    background-color: aliceblue;
+    border: 1px solid red;
+    width: 500px;
+    flex: 1 1 auto;
+    display: flex;
+
+}
+
+.option-bar {
+    background-color: yellow;
+    border: 1px solid black;
+    width: 300px;
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}
+
+.pixel {
+    width: 30px;
+    height: 30px;
+    flex: 1;
+    border: 1px solid black;
+}
