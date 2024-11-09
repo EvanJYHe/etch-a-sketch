@@ -10,6 +10,7 @@ clearButton.addEventListener('click', createCanvas);
 function createPixel() { // function to create the individual pixel
     const pixel = document.createElement("div");
     pixel.classList.add("pixel");
+    pixel.style.backgroundColor = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6)
     pixel.style.opacity = 0; // set opacity to 0 to gradually reveal the color (must be set with js, js can only access inline styles not css)
     pixel.addEventListener('mouseover', function() { //add object listender to change the pixels color when hovered over
         colorIn(pixel)
