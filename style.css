@@ -68,8 +68,6 @@ button:active {
 .pixel {
     aspect-ratio: 1;
     flex: 1;
-    border: 1px solid black;
-    background-color: black;
 }
 
 .grid-line {
