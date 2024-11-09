@@ -20,6 +20,7 @@ function createPixel() { // function to create the individual pixel
 
 function colorIn(pixel) {
     let currentOpacity = parseFloat(pixel.style.opacity); //get current opacity
+    pixel.style.backgroundColor = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6)
     pixel.style.opacity = Math.min(currentOpacity + 0.1, 1); //increment opacity, but capt it at 1
 }
 
